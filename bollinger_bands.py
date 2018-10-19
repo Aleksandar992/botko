@@ -61,6 +61,7 @@ BTC_USD[['Adj Close', '30 Day MA', 'Upper Band','Lower Band']].plot(figsize=(14,
 
 for index, pos in BTC_USD.dropna(subset=['Position'])['Position'].iteritems():
     plt.axvline(index, color='green' if pos == 1 else 'red')
+plt.show()
 
 
 
